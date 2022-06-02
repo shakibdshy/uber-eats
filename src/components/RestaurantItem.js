@@ -15,8 +15,8 @@ const RestaurantItem = ({ restaurant }) => {
                     <Text style={styles.restaurantTitle}>{ restaurant.name }</Text>
                     <Text style={styles.restaurantSubtitle}>{restaurant.deliveryFee} {restaurant.minDeliveryTime} - {restaurant.maxDeliveryTime}</Text>
                 </View>
-                <View style={styles.restaurantRating}>
-                    <Text>{ restaurant.rating }</Text>
+                <View>
+                    <Text style={styles.restaurantRating}>{ restaurant.rating }</Text>
                 </View>
             </View>
         </View>
@@ -55,11 +55,12 @@ const styles = StyleSheet.create({
     },
 
     restaurantRating: {
-        fontSize: 14,
-        width: 50,
-        height: 50,
-        lineHeight: 1.2,
-        // borderRadius: '50%',
+        fontSize: 16,
+        fontWeight: 'bold',
+        width: 40,
+        height: 40,
+        lineHeight: 40,
+        borderRadius: 99999,
         backgroundColor: '#f5f5f5',
         textAlign: 'center',
     }

@@ -8,7 +8,12 @@ export default function App() {
     <View style={styles.container}>
       {/* Restaurant Items */}
       {/* FlatList */}
-      <FlatList data={restaurants} renderItem={({ item }) => <RestaurantItem restaurant={item} /> }  />
+      <FlatList
+        data={restaurants}
+        renderItem={({ item }) => <RestaurantItem restaurant={item} />}
+        showsVerticalScrollIndicator={false}
+
+      />
 
       <StatusBar style="auto" />
     </View>
