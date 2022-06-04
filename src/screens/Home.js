@@ -1,5 +1,6 @@
-import { View, Text } from 'react-native'
-import styles from '../styles/base';
+import { View, Text, FlatList } from 'react-native'
+import restaurants from '../../assets/data/restaurants.json'
+import RestaurantItem from '../components/RestaurantItem'
 
 const Home = () => {
   return (
