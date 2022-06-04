@@ -13,7 +13,7 @@ const RestaurantItem = ({ restaurant }) => {
             <View style={styles.restaurantContent}>
                 <View>
                     <Text style={styles.restaurantTitle}>{ restaurant.name }</Text>
-                    <Text style={styles.restaurantSubtitle}>{restaurant.deliveryFee} {restaurant.minDeliveryTime} - {restaurant.maxDeliveryTime}</Text>
+                    <Text style={styles.restaurantSubtitle}>$ {restaurant.deliveryFee} {restaurant.minDeliveryTime} - {restaurant.maxDeliveryTime}</Text>
                 </View>
                 <View>
                     <Text style={styles.restaurantRating}>{ restaurant.rating }</Text>
