@@ -18,6 +18,10 @@ const DishDetailsScreen = () => {
         setQuantity(quantity + 1);
     }
 
+    const getTotal = () => {
+        return (restaurant.price * quantity).toFixed(2);
+    };
+
     return (
         <View style={styles.page}>
             <View style={styles.dishHeader}>
@@ -31,7 +35,7 @@ const DishDetailsScreen = () => {
                 <AntDesign onPress={itemIncrease} name="pluscircleo" size={44} color="black" />
             </View>
             <View style={styles.dishFooter}>
-                {/* <Button>Add To Cart</Button> */}
+                <Text style={styles.buttonText}>Add {quantity} to basket &#8226; ${getTotal()}</Text>
             </View>
         </View>
     )

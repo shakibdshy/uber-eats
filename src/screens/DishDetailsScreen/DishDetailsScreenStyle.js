@@ -39,5 +39,21 @@ export default StyleSheet.create({
         paddingHorizontal: 10,
     },
 
-    dishFooter: {},
+    dishFooter: {
+        marginTop: "auto",
+        marginBottom: 20,
+        marginHorizontal: 15,
+    },
+    
+    buttonText: {
+        fontSize: 18,
+        textAlign: "center",
+        backgroundColor: "#000",
+        color: "#fff",
+        padding: 18,
+        width: "100%",
+    },
+    buttonPrice: {
+        marginLeft: 50,
+    }
 })
