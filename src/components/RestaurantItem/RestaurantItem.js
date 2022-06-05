@@ -1,5 +1,5 @@
 import { Text, View, Image } from 'react-native'
-import styles from '../styles/RestaurantItemStyle'
+import styles from '../RestaurantItem/RestaurantItemStyle'
 
 const RestaurantItem = ({ restaurant }) => {
     return (

@@ -7,9 +7,10 @@ import {
     Text,
 } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
-import restaurants from '../../assets/data/restaurants.json'
-import styles from '../styles/RestaurantDetailsStyle'
-import DishItem from "../components/DishItem";
+import restaurants from '../../../assets/data/restaurants.json';
+import styles from '../RestaurantDetailsScreen/RestaurantDetailsStyle';
+import DishItem from '../../components/DishItem/DishItem';
+
 
 const RestaurantDetailsScreen = () => {
     const restaurant = restaurants[0];
