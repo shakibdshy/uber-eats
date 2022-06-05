@@ -4,13 +4,11 @@ import {
     Text,
 } from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
-import restaurants from '../../../assets/data/restaurants.json';
 import styles from './RestaurantDetailsStyle';
 
 
-const RestaurantDetailsHeader = () => {
-    const restaurant = restaurants[0];
 
+const RestaurantDetailsHeader = ({restaurant}) => {
     return (
         <View style={styles.page}>
             <View>
