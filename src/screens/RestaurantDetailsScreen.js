@@ -9,6 +9,7 @@ import {
 import { FontAwesome } from '@expo/vector-icons';
 import restaurants from '../../assets/data/restaurants.json'
 import styles from '../styles/RestaurantDetailsStyle'
+import DishItem from "../components/DishItem";
 
 const RestaurantDetailsScreen = () => {
     const restaurant = restaurants[0];
@@ -28,6 +29,12 @@ const RestaurantDetailsScreen = () => {
                 <Text style={styles.title}>{restaurant.name}</Text>
                 <Text style={styles.rating}>$ . {restaurant.rating} <FontAwesome name="star" size={16} color="#FDCC0D" /></Text>
             </View>
+            <Text style={ styles.menuText }>Menu</Text>
+            <FlatList
+                data={restaurant.dishes}
+                renderItem={({ item }) => <DishItem dish={item} />}
+                showsVerticalScrollIndicator={false}
+            />
         </View>
     )
 }

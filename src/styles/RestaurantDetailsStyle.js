@@ -33,5 +33,12 @@ export default StyleSheet.create({
 
     rating: {
         fontSize: 18,
+    },
+
+    menuText: {
+        fontSize: 16,
+        fontWeight: "bold",
+        marginVertical: 5,
+        paddingHorizontal: 20,
     }
 })
