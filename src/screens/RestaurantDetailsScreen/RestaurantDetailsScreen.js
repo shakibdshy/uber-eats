@@ -7,10 +7,15 @@ import styles from '../RestaurantDetailsScreen/RestaurantDetailsStyle';
 import DishItem from '../../components/DishItem/DishItem';
 import Header from './RestaurantDetailsHeader';
 import RestaurantDetailsHeader from "./RestaurantDetailsHeader";
+import { useRoute } from "@react-navigation/native";
 
 
 const RestaurantDetailsScreen = () => {
     const restaurant = restaurants[0];
+    const route = useRoute();
+
+    const id = route.params?.id;    
+    console.log(id);
 
     return (
         <View style={styles.page}>

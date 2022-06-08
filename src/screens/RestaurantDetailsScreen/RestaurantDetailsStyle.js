@@ -19,7 +19,7 @@ export default StyleSheet.create({
 
     icon: {
         position: "absolute",
-        top: 30,
+        top: 50,
         left: 20,
         zIndex: 10,
         color: "rgba(255, 255, 255, 0.8)",
