@@ -12,6 +12,11 @@ const RootNavigator = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="RestaurantDetailsScreen" component={RestaurantDetailsScreen} options={{headerShown: false}} />
+            <Stack.Screen name="BasketScreen" component={BasketScreen} />
+            <Stack.Screen name="DishDetailsScreen" component={DishDetailsScreen} />
+            <Stack.Screen name="OrderDetailsScreen" component={OrderDetailsScreen} />
+            <Stack.Screen name="OrderScreen" component={OrderScreen} />
         </Stack.Navigator>
     );
 }
