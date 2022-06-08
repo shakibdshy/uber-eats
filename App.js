@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import BasketScreen from './src/screens/Basket/BasketScreen';
 import DishDetailsScreen from './src/screens/DishDetailsScreen/DishDetailsScreen';
 import Home from './src/screens/Home';
+import OrderDetailsScreen from './src/screens/OrderDetailsScreen/OrderDetailsScreen';
 import OrderScreen from './src/screens/OrderScreen/OrderScreen';
 import RestaurantDetailsScreen from './src/screens/RestaurantDetailsScreen/RestaurantDetailsScreen';
 
@@ -13,7 +14,8 @@ export default function App() {
       {/* <RestaurantDetailsScreen /> */}
       {/* <DishDetailsScreen /> */}
       {/* <BasketScreen /> */}
-      <OrderScreen />
+      {/* <OrderScreen /> */}
+      <OrderDetailsScreen />
 
 
       <StatusBar style="auto" />
