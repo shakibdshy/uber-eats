@@ -28,7 +28,7 @@
     "webpack-dev-server": "4.9.2"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5"
+    "@babel/core": "7.18.13"
   },
   "private": true
 }
